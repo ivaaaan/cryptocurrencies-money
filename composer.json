@@ -1,0 +1,36 @@
+{
+    "name": "iillexial/cryptocurrencies-money",
+    "description": "A source of cryptocurrencies for https://github.com/moneyphp/money",
+    "type": "library",
+    "require": {
+        "moneyphp/money": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "license": "GNU GENERAL PUBLIC LICENSE",
+    "authors": [
+        {
+            "name": "Ivan Klymenchenko",
+            "email": "iillexial@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Money\\Cryptocurrencies\\": "src/"
+        }
+    },
+    "scripts": {
+        "clean": "rm -rf build/ vendor/",
+        "test": [
+            "vendor/bin/phpunit -v"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Cryptocurrencies\\": "tests/"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
