@@ -35,7 +35,7 @@ The `Money\Cryptocurrencies\Currencies\Cryptocurrenices` implements the `Money\C
 use Money\Cryptocurrencies\Currencies\Cryptocurrencies;
 use Money\Currencies\AggregateCurrencies;
 use Money\Currencies\ISOCurrencies;
-Money\Cryptocurrencies\Formatter\CryptocurrencyMoneyFormatter;
+use Money\Cryptocurrencies\Formatter\CryptocurrencyMoneyFormatter;
 
 $currencies = new Cryptocurrencies();
 
